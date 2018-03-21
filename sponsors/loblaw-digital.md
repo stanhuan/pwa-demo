@@ -1,5 +1,5 @@
 ---
-company: Loblaw Digital
+title: Loblaw Digital
 image: /static/assets/loblawdigital.svg
 website: 'http://loblawdigital.co/'
 ---
