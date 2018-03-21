@@ -13,7 +13,7 @@ collections: # A list of collections the CMS should be able to edit
     folder: "_data/sponsors"
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Company", name: "company", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Website", name: "website", widget: "string"}
       - {label: "Level", name: "level", widget: "select", options: ["startup", "bronze", "silver", "gold"]}
