@@ -33,4 +33,4 @@ collections:
         widget: list
         fields:
           - {label: Question, name: question, widget: string}
-          - {label: Answer, name: answer, widget: string}
+          - {label: Answer, name: answer, widget: text}
