@@ -1,0 +1,5 @@
+backend:
+  name: github
+  repo: stanhuan/pwa-demo
+
+media_folder: static/assets
