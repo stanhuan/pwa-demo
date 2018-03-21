@@ -3,3 +3,41 @@ backend:
   repo: stanhuan/pwa-demo
 
 media_folder: static/assets
+
+collections:
+  - name: sponsors
+    label: Sponsors
+    folder: sponsors
+    create: true
+    fields:
+      - name: name
+        label: Name
+      - name: photo
+        label: Photo
+        widget: image
+      - name: website
+        label: Website
+      - name: level
+        label: Level
+        widget: select
+        options: [startup, bronze, silver, gold]
+  - name: faqs
+    label: FAQs
+    folder: faqs
+    create: true
+    widget: list
+    fields:
+      - label: section
+        name: FAQ Section
+        create: true
+        fields:
+          - name: name
+            label: Section title
+          - name: Questions
+            label: questions
+            widget: list
+            fields:
+              - name: question
+                label: Question
+              - name: answer
+                label: Answer
