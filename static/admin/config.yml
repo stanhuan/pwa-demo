@@ -21,23 +21,16 @@ collections:
         label: Level
         widget: select
         options: [startup, bronze, silver, gold]
-  - name: faqs
-    label: FAQs
+  - label: FAQs
+    name: faqs
     folder: faqs
     create: true
     widget: list
     fields:
-      - label: section
-        name: FAQ Section
-        create: true
+      - {label: Section, name: section, widget: string}
+      - label: faq
+        name: FAQ
+        widget: list
         fields:
-          - name: name
-            label: Section title
-          - name: Questions
-            label: questions
-            widget: list
-            fields:
-              - name: question
-                label: Question
-              - name: answer
-                label: Answer
+          - {label: Question, name: question, widget: string}
+          - {label: Answer, name: answer, widget: string}
